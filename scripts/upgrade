@@ -33,6 +33,17 @@ chmod 400 "$install_dir/.env"
 chown "$app:$app" "$install_dir/.env"
 
 #=================================================
+# BUILD DEPENDENCIES
+#=================================================
+ynh_script_progression "Building $app..."
+
+pushd "$install_dir"
+	ynh_hide_warnings ynh_exec_as_app pnpm install
+	ynh_hide_warnings ynh_exec_as_app pnpm migrate
+	ynh_hide_warnings ynh_exec_as_app pnpm store prune
+popd
+
+#=================================================
 # REAPPLY SYSTEM CONFIGURATION
 #=================================================
 ynh_script_progression "Upgrading system configurations related to $app..."
