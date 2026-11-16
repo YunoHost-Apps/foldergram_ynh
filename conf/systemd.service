@@ -1,5 +1,5 @@
 [Unit]
-Description=Small description of the service
+Description=Self-hosted folder-based Instagram-style photo and video gallery app
 After=network.target
 
 [Service]
@@ -7,9 +7,13 @@ Type=simple
 User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
-ExecStart=__INSTALL_DIR__/script
+Environment=NODE_ENV=production
+Environment="PATH=__PATH_WITH_NODEJS__"
+ExecStart=__NODEJS_DIR__/pnpm start
+
 StandardOutput=append:/var/log/__APP__/__APP__.log
 StandardError=inherit
+Restart=always
 
 ### Depending on specificities of your service/app, you may need to tweak these
 ### .. but this should be a good baseline
