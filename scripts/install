@@ -44,6 +44,7 @@ ynh_script_progression "Building $app..."
 
 pushd "$install_dir"
 	ynh_hide_warnings ynh_exec_as_app pnpm install  --frozen-lockfile
+	ynh_hide_warnings ynh_exec_as_app pnpm build
 	ynh_hide_warnings ynh_exec_as_app pnpm migrate
 	#ynh_hide_warnings ynh_exec_as_app pnpm store prune
 popd
