@@ -24,9 +24,9 @@ helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
 
-ldap = "?"
+ldap = false
 
-sso = "?"
+sso = false
 
 disk = "50M"
 ram.build = "50M"
@@ -69,7 +69,7 @@ ram.runtime = "50M"
     autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
-    allow_mail = true
+    allow_email = true
     
     [resources.install_dir]
 
