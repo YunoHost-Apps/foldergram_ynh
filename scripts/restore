@@ -32,8 +32,7 @@ ynh_script_progression "Restoring system configurations related to $app..."
 
 ynh_restore "/etc/nginx/conf.d/$domain.d/$app.conf"
 
-ynh_restore "/etc/systemd/system/$app.service"
-systemctl enable "$app.service" --quiet
+ynh_config_add_systemd
 
 yunohost service add "$app" --description="Self-hosted folder-based Instagram-style photo and video gallery app" --log="/var/log/$app/$app.log"
 
