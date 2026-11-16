@@ -1,1 +1,1 @@
-Ceci est une fausse description des fonctionalités de l'app
+Foldergram transforme vos dossiers locaux de photos et de vidéos en une galerie auto-hébergée, dotée d’un flux familier, de profils par dossier et d’une interface de visualisation des contenus. L’outil indexe votre bibliothèque dans une base de données SQLite et utilise des miniatures ainsi que des aperçus pour une navigation fluide, tout en préservant l’intégrité de vos fichiers originaux.
