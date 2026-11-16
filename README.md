@@ -19,10 +19,6 @@ Self-hosted folder-based Instagram-style photo and video gallery app
 <a href="https://github.com/YunoHost-Apps/foldergram_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
 
-
-## Screenshots
-![Screenshot of Foldergram](./doc/screenshots/example.jpg)
-
 ## 📦 Developer info
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/foldergram)](https://ci-apps.yunohost.org/ci/apps/foldergram/)
