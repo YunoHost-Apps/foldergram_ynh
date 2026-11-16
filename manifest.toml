@@ -81,7 +81,7 @@ ram.runtime = "50M"
     [resources.ports]
 
     [resources.apt]
-    packages = "ffprobe, ffmpeg"
+    packages = "ffmpeg"
 
     [resources.nodejs]
     version = "24"
