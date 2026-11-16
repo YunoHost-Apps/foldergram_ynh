@@ -25,7 +25,7 @@ ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
 
-chown -R "$app:www-data" "$install_dir"
+chown -R "$app:$app" "$install_dir"
 
 #=================================================
 # APP INITIAL CONFIGURATION
@@ -50,6 +50,7 @@ pushd "$install_dir"
 popd
 
 chown -R foldergram:foldergram $install_dir
+chown -R "$app:$app" "/var/log/$app"
 
 #=================================================
 # SYSTEM CONFIGURATION
