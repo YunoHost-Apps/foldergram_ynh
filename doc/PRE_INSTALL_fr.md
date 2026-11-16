@@ -1,1 +1,1 @@
-Ceci est un faux disclaimer à présenter avant l'installation
+N'oubliez pas de créer un mot de passe administrateur après l'installation.

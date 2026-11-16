@@ -1,1 +1,1 @@
-This is a dummy disclaimer to display prior to the install
+Don't forget to create an admin password after install
